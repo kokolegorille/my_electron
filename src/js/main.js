@@ -40,3 +40,8 @@ app.on('activate', () => {
     createWindow();
   }
 });
+
+// IPC callbacks
+ipcMain.on('system:ping', 
+  () => mainWindow.webContents.send('system:pong', null)
+);
