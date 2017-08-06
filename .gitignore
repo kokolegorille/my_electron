@@ -1,0 +1,8 @@
+npm-debug.log
+yarn-error.log
+/node_modules
+/build/*.js
+/build/*.css
+/build/*.sqlite3
+/src/js/config/*
+.DS_Store
