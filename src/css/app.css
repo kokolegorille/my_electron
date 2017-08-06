@@ -1,0 +1,20 @@
+/* 
+  https://github.com/electron/electron/issues/4420
+  Electron FIX :
+  Electron Helper[18713:10987691] Couldn't set selectedTextBackgroundColor from default ()
+*/
+::selection {
+  background: transparent;
+}
+
+/* LAYOUT */
+a { text-decoration: none;}
+
+/* Simple inline menu */
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+nav ul li { padding-right: 1em; }
+nav ul li a.active { font-weight: bold; }

@@ -33,7 +33,7 @@ module.exports = {
     filename: '[name].js'
   },
   resolve: {
-    extensions: ['.js']
+    extensions: ['.js', '.jsx']
   },
   module: {
     rules: [
@@ -43,7 +43,7 @@ module.exports = {
         exclude: /node_modules/,
         loader: 'babel-loader',
         options: {
-          presets: ['es2015', 'electron', 'stage-0']
+          presets: ['es2015', 'react', 'electron', 'stage-0']
         }
       },
       {
